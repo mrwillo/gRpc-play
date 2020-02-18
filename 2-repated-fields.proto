@@ -1,12 +1,16 @@
+//the system for this is proto3
 syntax = "proto3";
 
+ 
 message Person {
     int32 age = 1;
     string first_name = 2;
     string last_name = 3;
     bytes small_image = 5;
     bool is_profile_verfied = 5;
-    float height = 7;
+    float height = 6;
 
+
+    //list of phone numbers that is opitional to provide
     repeated string phone_numbers = 7;
 }

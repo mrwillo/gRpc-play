@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message DayOfWeek {
+    enum Days = {
+        UNDEFINED = 0;
+        MONDAY = 1;
+        TUESDAY = 2;
+        WEDNESDAY = 3;
+    }
+    Days days = 1;
+}
